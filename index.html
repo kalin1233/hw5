@@ -1,0 +1,37 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+Kalin Toussaint, UMass Lowell Computer Science, Kalin_Toussaint@student.uml.edu
+Copyright (c) 2024 by Kalin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by KT on June 29, 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble Game</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="game-container">
+    <div id="board">
+        <!-- Scrabble board will be generated dynamically -->
+    </div>
+    <div id="rack">
+        <!-- Tile rack will be generated dynamically -->
+    </div>
+    <div id="controls">
+        <!-- Buttons for submitting a word and dealing new tiles -->
+        <button id="submit-word">Submit Word</button>
+        <button id="deal-tiles">Deal New Tiles</button>
+    </div>
+    <div id="score">Score: <span id="score-value">0</span></div>
+</div>
+<!-- Including JavaScript files for game logic and data -->
+<script src="scrabble-data.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

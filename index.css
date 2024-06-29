@@ -1,0 +1,97 @@
+/*
+File: index.css
+GUI Assignment: Creating an Interactive Dynamic Table
+Kalin Toussaint, UMass Lowell Computer Science, Kalin_Toussaint@student.uml.edu
+Copyright (c) 2024 by Kalin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by KT on June 29, 2024
+*/
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container for the game elements */
+#game-container {
+    text-align: center;
+}
+
+/* Styling for the Scrabble board */
+#board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual board spaces */
+.board-space {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-size: cover;
+}
+
+/* Styling for the tile rack */
+#rack {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-image: url('graphics_data/scrabble-tile-holder-406774_640.png');
+    background-size: cover;
+    height: 60px;
+}
+
+/* Styling for individual tiles */
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #b8a88a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: move;
+    margin: 0 5px;
+    background-size: cover;
+}
+
+/* Styling for the letter inside a tile */
+.tile .letter {
+    font-size: 20px;
+}
+
+/* Styling for the value inside a tile */
+.tile .value {
+    font-size: 10px;
+    position: relative;
+    top: 5px;
+    right: -10px;
+}
+
+/* Styling for the control buttons */
+#controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for the score display */
+#score {
+    font-size: 18px;
+    font-weight: bold;
+}
